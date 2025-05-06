@@ -2,7 +2,6 @@ package com.whl.spring.ai.demo.controller;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import org.springframework.ai.autoconfigure.vectorstore.redis.RedisVectorStoreProperties;
 import org.springframework.ai.chat.model.ChatResponse;
 import org.springframework.ai.chat.prompt.Prompt;
 import org.springframework.ai.document.Document;
@@ -10,6 +9,7 @@ import org.springframework.ai.openai.OpenAiChatModel;
 import org.springframework.ai.reader.tika.TikaDocumentReader;
 import org.springframework.ai.vectorstore.SearchRequest;
 import org.springframework.ai.vectorstore.VectorStore;
+import org.springframework.ai.vectorstore.redis.autoconfigure.RedisVectorStoreProperties;
 import org.springframework.core.io.ByteArrayResource;
 import org.springframework.core.io.Resource;
 import org.springframework.web.bind.annotation.*;

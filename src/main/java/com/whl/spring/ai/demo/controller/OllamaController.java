@@ -1,9 +1,9 @@
 package com.whl.spring.ai.demo.controller;
 
-import org.springframework.ai.autoconfigure.ollama.OllamaConnectionProperties;
 import org.springframework.ai.chat.messages.UserMessage;
 import org.springframework.ai.chat.model.ChatResponse;
 import org.springframework.ai.chat.prompt.Prompt;
+import org.springframework.ai.model.ollama.autoconfigure.OllamaConnectionProperties;
 import org.springframework.ai.ollama.api.OllamaApi;
 import org.springframework.ai.openai.OpenAiChatModel;
 import org.springframework.ai.openai.OpenAiChatOptions;
