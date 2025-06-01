@@ -14,7 +14,7 @@
     <groupId>com.whl.spring</groupId>
     <artifactId>spring-ai-demo</artifactId>
     <version>${revision}</version>
-    <name>spring-boot-demo</name>
+    <name>spring-ai-demo</name>
     <description>Demo project for Spring AI</description>
 
     <properties>
@@ -22,8 +22,8 @@
         <revision>1.0-SNAPSHOT</revision>
         <!-- org/springframework/ai/spring-ai-bom -->
         <spring-ai.version>1.0.0</spring-ai.version>
-        <!-- com/alibaba/cloud/ai/spring-ai-alibaba-starter -->
-        <spring-ai-alibaba.version>1.0.0-M6.1</spring-ai-alibaba.version>
+        <!-- com/alibaba/cloud/ai/spring-ai-alibaba-bom -->
+        <spring-ai-alibaba.version>1.0.0.2</spring-ai-alibaba.version>
     </properties>
 
     <repositories>
@@ -52,8 +52,10 @@
         <dependencies>
             <dependency>
                 <groupId>com.alibaba.cloud.ai</groupId>
-                <artifactId>spring-ai-alibaba-starter</artifactId>
+                <artifactId>spring-ai-alibaba-bom</artifactId>
                 <version>${spring-ai-alibaba.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
             </dependency>
             <dependency>
                 <groupId>org.springframework.ai</groupId>
@@ -66,10 +68,10 @@
     </dependencyManagement>
 
     <dependencies>
-        <!--<dependency>
+        <dependency>
             <groupId>com.alibaba.cloud.ai</groupId>
-            <artifactId>spring-ai-alibaba-starter</artifactId>
-        </dependency>-->
+            <artifactId>spring-ai-alibaba-starter-dashscope</artifactId>
+        </dependency>
         <dependency>
             <groupId>org.springframework.ai</groupId>
             <artifactId>spring-ai-starter-model-ollama</artifactId>
