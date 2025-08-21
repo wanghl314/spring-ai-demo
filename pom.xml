@@ -23,7 +23,7 @@
         <!-- org/springframework/ai/spring-ai-bom -->
         <spring-ai.version>1.0.1</spring-ai.version>
         <!-- com/alibaba/cloud/ai/spring-ai-alibaba-bom -->
-        <spring-ai-alibaba.version>1.0.0.2</spring-ai-alibaba.version>
+        <spring-ai-alibaba.version>1.0.0.3</spring-ai-alibaba.version>
     </properties>
 
     <repositories>
