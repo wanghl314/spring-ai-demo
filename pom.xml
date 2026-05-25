@@ -21,11 +21,9 @@
         <java.version>21</java.version>
         <revision>1.0-SNAPSHOT</revision>
         <!-- org/springframework/ai/spring-ai-bom -->
-        <spring-ai.version>1.1.6</spring-ai.version>
+        <spring-ai.version>1.1.7</spring-ai.version>
         <!-- com/alibaba/cloud/ai/spring-ai-alibaba-bom -->
-        <spring-ai-alibaba.version>1.1.2.2</spring-ai-alibaba.version>
-        <!-- com/alibaba/cloud/ai/spring-ai-alibaba-extensions-bom -->
-        <spring-ai-alibaba-extensions.version>1.1.2.2</spring-ai-alibaba-extensions.version>
+        <spring-ai-alibaba.version>1.1.2.3</spring-ai-alibaba.version>
     </properties>
 
     <repositories>
@@ -62,7 +60,7 @@
             <dependency>
                 <groupId>com.alibaba.cloud.ai</groupId>
                 <artifactId>spring-ai-alibaba-extensions-bom</artifactId>
-                <version>${spring-ai-alibaba-extensions.version}</version>
+                <version>${spring-ai-alibaba.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
